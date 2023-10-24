@@ -1,4 +1,3 @@
-const { Item } = require('./item.js')
 class User {
     constructor(name, balance, socket) {
         this.name = name

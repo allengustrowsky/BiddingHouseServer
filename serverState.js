@@ -75,7 +75,6 @@ class AuctionServer {
      */
     static HandleAuctionWinner() {
         clearTimeout(AuctionServer.clock)
-        // console.log(AuctionServer.highestBidder)
         const winnerName = AuctionServer.users[AuctionServer.highestBidder].name
         const itemName = AuctionServer.itemForSale.name
 
