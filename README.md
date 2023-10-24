@@ -1,4 +1,4 @@
-# Auction House - Client
+# Auction House - Server
 
 The server of an app that creates a virtual auction space where connected users can create auctions and bid/purchase items from other users.  Live communication between client and server is achieved with web sockets.  The client can be found [here](https://github.com/allengustrowsky/BiddingHouseClient).
 
