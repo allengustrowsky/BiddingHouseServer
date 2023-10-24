@@ -78,6 +78,7 @@ class AuctionServer {
         const winnerName = AuctionServer.users[AuctionServer.highestBidder].name
         const itemName = AuctionServer.itemForSale.name
 
+        AuctionServer.itemForSale.price = AuctionServer.highestBid
         AuctionServer.users[AuctionServer.salesPerson].soldItems.push(AuctionServer.itemForSale)
         AuctionServer.users[AuctionServer.salesPerson].balance += AuctionServer.highestBid
         AuctionServer.users[AuctionServer.highestBidder].inventory.push(AuctionServer.itemForSale)
