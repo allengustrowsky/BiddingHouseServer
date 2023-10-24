@@ -9,9 +9,6 @@ const { handleApprove } = require('./request_handlers/approve.js')
 const { handleBid } = require('./request_handlers/bid.js')
 const { disconnectDeadSockets } = require('./request_handlers/disconnect.js')
 
-
-console.log('starting up...' + PORT);
-
 const app = () => {
     const io = new Server(PORT, {cors: {origin: "*"}})
 
@@ -26,6 +23,7 @@ const app = () => {
     }
 
     io.on('connection', onConnection)
+    console.log(`server started on port ${PORT}.`);
 }
 
 app()
